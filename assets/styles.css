@@ -1,0 +1,239 @@
+*,::after,*::before{
+    font-family:  cursive;
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    background-color: whitesmoke;
+    height: 100vh;
+/*     overflow: hidden; */
+    position: relative;
+    background-color: #e0e9f1;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+    background-color:#318CE7;
+    margin-bottom: 1rem;
+}
+.logo{
+    font-size: 5rem;
+}
+.navitems{
+    font-size: 1.6rem;
+}
+a{
+    text-decoration: none;
+    padding: 1rem;
+    color: black;
+    cursor: pointer;
+}
+.active{
+    text-decoration: underline;
+}
+.container{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    font-size: 5rem;
+    justify-content: space-between;
+    margin-top: 1rem;
+    height: 60vh;
+}
+.equation{
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 10rem;
+    margin: 0 0 0 5rem;
+}
+.eqn{
+    padding: 2rem;
+}
+.eqnn{
+    color: #eb2632;
+}
+.num1{
+    color: #a2c11c;
+}
+.num2{
+    color: #fd5959;
+}
+.options{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.option1,.option2,.option3{
+    padding: 1rem;
+    border: 2px solid black;
+    margin: .6rem;
+    text-align: center;
+    border-radius: 2rem;
+}
+.option1{
+    color: #0092ca;
+}
+.option2{
+    color: #eb2632;
+}
+.option3{
+    color: #a2c11c;
+}
+.option1:hover{
+    background-color: #0092ca;
+    border: none;
+    color: black;
+    transition: all .5s ease-in;
+}
+.option2:hover{
+    background-color: #eb2632;
+    border: none;
+    color: black;
+    transition: all .5s ease-in;
+}
+.option3:hover{
+    background-color: #a2c11c;
+    border: none;
+    color: black;
+    transition: all .5s ease-in;
+}
+#tryagain{
+    width: 30rem;
+    height: 10rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 3rem;
+    background-color:#318CE7;
+    position: absolute;
+    border-radius: 2rem;
+    padding: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.fa{
+    cursor: pointer;
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 50%;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+#backhome{
+    margin: 2rem 0 0 2rem;
+    cursor: pointer;
+    border: 2px solid black;
+    width: fit-content;
+    padding: .4rem 1rem;
+    border-radius: 2rem;
+    outline: none;
+}
+
+#backhome:hover{
+    background-color: #318CE7;
+    color: white;
+    transition: .8s ease-in-out;
+}
+#instructions{
+    text-align: center; 
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+@media screen and (max-width: 1350px) {
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .options{
+        flex-direction: row;
+        width: 50%;
+    }
+    .option1,.option2,.option3{
+        padding: 0 3rem;
+    }
+    .equation{
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 10rem;
+    margin: 0 0 0 0;
+}
+}
+@media screen and (max-width: 1270px) {
+    nav{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    .equation{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10rem;
+}
+}
+@media screen and (max-width: 830px) {
+    .container{
+        justify-content: center;
+        align-items: center;
+    }
+    .eqn{
+        font-size: 3rem;
+    }
+    .option1,.option2,.option3{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 720px) {
+    .logo{
+        font-size: 3rem;
+    }
+    .navitems a{
+        font-size: 1.2rem;
+    }
+    .container{
+        height: 50vh;
+    }
+    #tryagain{
+        width: 20rem;
+    }
+    #instructions{
+        text-align: center; 
+        font-size: 1.5rem;
+        margin-top: 2rem;
+}
+    
+}
+@media screen and (max-width: 480px) {
+    .option1,.option2,.option3{
+        padding: 0 2rem;
+    }
+    .eqn{
+        padding: 1rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    nav .logo{
+        font-size: 2rem;
+    }
+    nav .navitems a {
+        font-size: 1rem;
+    }
+    .container .equation .eqn,.option1,.option2,.option3{
+        font-size: 1.8rem;
+    }
+    #tryagain{
+        width: 15rem;
+    }
+}
