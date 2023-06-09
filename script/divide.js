@@ -9,7 +9,7 @@ let answer = 0;
 
 function generateNew  () {
     let number1 = Math.floor(Math.random() * 100)
-    let number2 = Math.floor(Math.random() * 15)
+    let number2 = Math.floor(Math.random() * 15) + 1
     let dummy1 
     let dummy2 
     answer = Math.floor(number1 / number2)
