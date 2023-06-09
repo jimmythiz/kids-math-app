@@ -5,7 +5,7 @@
 }
 .wrapper{
     background-color: whitesmoke;
-    height: 100vh;
+    min-height: 100vh;
 /*     overflow: hidden; */
     position: relative;
     background-color: #e0e9f1;
